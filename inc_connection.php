@@ -1,18 +1,13 @@
 
 <?php
-$servername = 'tcp:qrtrack-server.database.windows.net,1433';
-$username = 'NimitM';
-$password = 'Capstone@123';
+$db_host = 'your-mysql-host.azure.com';
+$db_name = 'your-database-name';
+$db_user = 'your-username@your-mysql-host';
+$db_pass = 'your-password';
 
+$conn = new mysqli($db_host, $db_user, $db_pass, $db_name);
 
-// Create connection
-try {
-    $conn = new mysqli($servername, $username, $password);
-		
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
 }
-catch (mysqli_sql_exception $e){
-    die("Connection failed: " . $e->getCode(). ": " . $e->getMessage());
-}
-
 ?>
-
