@@ -1,8 +1,8 @@
 
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
+$servername = 'tcp:qrtrack-server.database.windows.net,1433';
+$username = 'NimitM';
+$password = 'Capstone@123';
 
 
 // Create connection
