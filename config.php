@@ -1,3 +1,4 @@
+
 <?php
 $db_host = 'tcp:qrtrack-server.database.windows.net,1433';
 $db_name = 'qrtrack_sample';
