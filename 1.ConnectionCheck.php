@@ -1,5 +1,6 @@
 <?php
 // PHP Data Objects(PDO) Sample Code:
+include('dbconfig.php');
 try {
     $conn = new PDO("sqlsrv:server = tcp:qrtrack.database.windows.net,1433; Database = QRtrack", "qrtrack_server", "Authenticate_check");
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

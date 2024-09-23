@@ -1,5 +1,6 @@
 <?php
 include 'inc_connection.php';
+include('dbconfig.php');
 try{
 	$sql="CREATE DATABASE qrtrack_sample";
 	$conn->query($sql);

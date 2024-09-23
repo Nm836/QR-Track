@@ -1,6 +1,7 @@
 <?php
+include('dbconfig.php');
 $servername="tcp:qrtrack-server.database.windows.net,1433";
-$username="NimitM";
+$username="Nm836";
 $password="Capstone@123";
 $Databasename="qrtrack_sample";
 try{
@@ -10,3 +11,5 @@ catch (mysqli_sql_exception $e) {
 die("Connection Error : ".$e->getMessage());
 }
 ?>
+
+
