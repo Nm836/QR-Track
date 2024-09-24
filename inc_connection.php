@@ -1,6 +1,6 @@
 
 <?php
-$servername = "tcp:qrtrack-server.database.windows.net";
+$servername = "tcp:qrtrack-server.database.windows.net,1433";
 $username = "Nm836";
 $password = "Capstone@123";
 
